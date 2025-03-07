@@ -1,4 +1,4 @@
-name: push the changes to main brach
+name: on push 
 
 on:
   push:
