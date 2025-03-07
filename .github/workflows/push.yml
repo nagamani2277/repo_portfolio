@@ -1,6 +1,9 @@
-name: Python package
+name: push the changes to main brach
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
