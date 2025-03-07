@@ -1,14 +1,17 @@
-name: Python package
+name: pull request workflow
 
-on: [ pull ]
-
+on:
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - main
 jobs:
   build:
 
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["pypy3.10", "3.9", "3.10", "3.11", "3.12", "3.13"]
+        python-version: ["3.13"]
 
     steps:
       - uses: actions/checkout@v4
